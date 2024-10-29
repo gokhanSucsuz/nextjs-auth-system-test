@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Button } from "../ui/button";
 import { Logout } from "@/lib/Logout";
-import { redirect, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import Loader from "./Loader";
 import { toast } from "sonner";
 

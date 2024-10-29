@@ -1,3 +1,12 @@
+✅ Nextjs server components
+✅ Prisma with Cookie process
+✅ Shadcn usage
+✅ Prisma / Prisma Client usage
+✅ Cloud mysql usage
+✅ Tailwind usage
+✅ lucia auth usage
+✅ Argon2id usage
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

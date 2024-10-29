@@ -7,6 +7,8 @@
 ✅ lucia auth usage
 ✅ Argon2id usage
 
+demo page is here => https://auth.gokhansucsuz.tech
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

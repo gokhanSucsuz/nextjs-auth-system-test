@@ -1,5 +1,4 @@
 import MySlider from "@/components/shared/MySlider";
-import ResizeableComp from "@/components/shared/ResizeableComp";
 import { getUser } from "@/lib/lucia";
 import { redirect } from "next/navigation";
 

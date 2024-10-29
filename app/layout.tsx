@@ -6,7 +6,6 @@ import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import { Toaster } from "@/components/ui/sonner";
 import { getUser } from "@/lib/lucia";
-import { redirect } from "next/navigation";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

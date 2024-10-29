@@ -1,4 +1,5 @@
-import LogoutButton from "@/components/shared/LogoutButton";
+import MySlider from "@/components/shared/MySlider";
+import ResizeableComp from "@/components/shared/ResizeableComp";
 import { getUser } from "@/lib/lucia";
 import { redirect } from "next/navigation";
 
@@ -9,11 +10,14 @@ export default async function Home() {
 	}
 
 	return (
-		<div className="flex">
-			<h1>
+		<div className="flex flex-col gap-2 p-2 items-center justify-between">
+			<h1 className="text-xl">
 				Welcome {user.username}
 			</h1>
-			<LogoutButton />
+
+			<div className="flex justify-center items-center w-[100%] max-h-[calc(100vh-250px)] gap-2 p-2">
+				<MySlider />
+			</div>
 		</div>
 	);
 }

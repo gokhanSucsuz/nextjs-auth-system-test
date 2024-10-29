@@ -5,6 +5,8 @@ import { ThemeProvider } from "@/components/shared/ThemeProvider";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import { Toaster } from "@/components/ui/sonner";
+import { getUser } from "@/lib/lucia";
+import { redirect } from "next/navigation";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -22,11 +24,13 @@ export const metadata: Metadata = {
   description: "Simple Authentication System with Next.js and Tailwind CSS",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const user = await getUser();
+	
   return (
      <html lang="en" suppressHydrationWarning>
         <head />
@@ -38,7 +42,7 @@ export default function RootLayout({
             disableTransitionOnChange
         >
           <div className="flex flex-col min-h-screen">
-            <Navbar/>
+            <Navbar user={user && true} />
           <div className="w-full flex-grow">
             {children}
             </div>
